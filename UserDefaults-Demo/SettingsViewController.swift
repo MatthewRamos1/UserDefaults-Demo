@@ -15,13 +15,18 @@ class SettingsViewController: UITableViewController {
     var currentUnit = UnitMeasurement.miles {
         didSet {
             unitMeasurementLabel.text = currentUnit.rawValue
-            
-            
-            
+            UserPreference.shared.updateUnitMeasurement(with: currentUnit)
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
+    }
+    
+    private func updateUI() {
+        if let unitMeasurement = UserPreference.shared.getUnitMeasurement() {
+            currentUnit = unitMeasurement
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
