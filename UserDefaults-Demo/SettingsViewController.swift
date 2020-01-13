@@ -27,5 +27,15 @@ class SettingsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //toggle between "Miles" or "Kilometers"
+        
+        switch indexPath.row {
+        case 0:
+            toggleUnitMeasurement()
+        default:
+            break
+        }
+    }
+    private func toggleUnitMeasurement() {
+        currentUnit = currentUnit == UnitMeasurement.miles ? UnitMeasurement.kilometers: UnitMeasurement.miles
     }
 }
