@@ -8,9 +8,24 @@
 
 import UIKit
 
+enum UnitMeasurement: String {
+    case miles = "Miles"
+    case kilometers = "Kilometers"
+}
 class SettingsViewController: UITableViewController {
 
+    @IBOutlet weak var unitMeasurementLabel: UILabel!
+ 
+    var currentUnit = UnitMeasurement.miles {
+        didSet {
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //toggle between "Miles" or "Kilometers"
     }
 }

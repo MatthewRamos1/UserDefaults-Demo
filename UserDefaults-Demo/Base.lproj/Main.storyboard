@@ -91,6 +91,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="01o-Q3-3RU"/>
+                    <connections>
+                        <outlet property="unitMeasurementLabel" destination="z0z-M4-y64" id="BhX-d4-yJg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7N-t7-F5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
