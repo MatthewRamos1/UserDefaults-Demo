@@ -18,6 +18,8 @@ class SettingsViewController: UITableViewController {
  
     var currentUnit = UnitMeasurement.miles {
         didSet {
+            unitMeasurementLabel.text = currentUnit.rawValue
+            
             
         }
     }
