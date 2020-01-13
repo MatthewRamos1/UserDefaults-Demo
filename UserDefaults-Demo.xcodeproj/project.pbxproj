@@ -14,6 +14,7 @@
 		0C602F5923CCC95900108DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C602F5823CCC95900108DD3 /* Assets.xcassets */; };
 		0C602F5C23CCC95900108DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C602F5A23CCC95900108DD3 /* LaunchScreen.storyboard */; };
 		0C602F6423CCCC9D00108DD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F6323CCCC9D00108DD3 /* SettingsViewController.swift */; };
+		0C602F6623CCD1D600108DD3 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F6523CCD1D600108DD3 /* UserPreferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0C602F5B23CCC95900108DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C602F5D23CCC95900108DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C602F6323CCCC9D00108DD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0C602F6523CCD1D600108DD3 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				0C602F4F23CCC95400108DD3 /* AppDelegate.swift */,
 				0C602F5123CCC95400108DD3 /* SceneDelegate.swift */,
+				0C602F6523CCD1D600108DD3 /* UserPreferences.swift */,
 				0C602F5323CCC95400108DD3 /* ViewController.swift */,
 				0C602F6323CCCC9D00108DD3 /* SettingsViewController.swift */,
 				0C602F5523CCC95400108DD3 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C602F6623CCD1D600108DD3 /* UserPreferences.swift in Sources */,
 				0C602F5423CCC95400108DD3 /* ViewController.swift in Sources */,
 				0C602F5023CCC95400108DD3 /* AppDelegate.swift in Sources */,
 				0C602F5223CCC95400108DD3 /* SceneDelegate.swift in Sources */,
