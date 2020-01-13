@@ -29,7 +29,9 @@ class UserPreference {
     }
     
     func getUnitMeasurement() -> UnitMeasurement? {
-        
+         guard let unitMeasurement = UserDefaults.standard.object(forKey: UserPreferenceKey.unitMeasurement) as? String else {
+            return nil
+        }
+        return UnitMeasurement(rawValue: unitMeasurement)
     }
-    
 }
